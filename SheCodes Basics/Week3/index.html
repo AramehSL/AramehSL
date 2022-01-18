@@ -7,103 +7,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Londrina+Shadow&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Londrina+Shadow&family=Quantico:ital@1&family=Raleway:wght@300&display=swap"
     rel="stylesheet">
   <title>Photography 📷</title>
   <style>
     body {
-      background: radial-gradient(993px at 0.5% 98.5%, rgb(0, 239, 247) 0%, rgb(0, 122, 147) 46.7%, rgb(0, 29, 72) 100.2%);
+      background: linear-gradient(180deg, rgba(27, 45, 63, 1) 0%, rgba(59, 115, 161, 1) 60%, rgba(131, 186, 212, 1) 86%);
     }
 
     h1 {
       text-align: center;
-      color: rgb(82, 163, 214);
+      color: rgb(82, 177, 214);
     }
 
     h2 {
 
       text-align: center;
-      color: rgb(113, 168, 202);
-      border: 2px solid rgb(202, 113, 53);
+      color: rgb(150, 207, 243);
+      border: 2px dashed #DE3C3C;
       border-radius: 5px;
       padding: 15px 80px;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
+    q,
+    .quoter {
+      display: block;
+      text-align: right;
+      position: absolute;
+      font-size: 13px;
+    }
+
+    q {
+      font-family: 'Raleway', sans-serif;
+      color: rgb(82, 163, 214);
+      top: 5px;
+      right: 15px;
+    }
+
+    .quoter {
+      font-family: 'Dancing Script', cursive;
+      color: lightblue;
+      right: 0;
+      top: 35px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px;
+      position: relative;
+    }
+
+
+    .love,
+    .capLetters,
+    .my-name,
+    .detail {
+      color: #da4747;
+    }
+
+    .up {
+      position: fixed;
+      bottom: 50px;
+      left: 20px;
+      display: inline-flex;
+      font-size: 30px;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgb(40, 80, 107);
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid rgb(80, 115, 150);
+      opacity: 0.4;
+    }
+
+
+
+    .up:hover {
+      opacity: 1;
+      color: #da4747;
+      background-color: rgb(80, 115, 150);
+      border: 1px solid #aa7777;
+      cursor: pointer;
+    }
+
     .btns {
       position: relative;
-      top: -20px;
-      left: -20px;
+      top: -15px;
+      left: -35px;
     }
+
+
+    .btn,
+    .btn-contact {
+      background-image: linear-gradient(to right, #83a4d4 0%, #b6fbff 51%, #83a4d4 100%);
+      transition: 0.5s;
+      background-size: 200% auto;
+      border: 1px solid #83a4d4;
+      border-radius: 5px;
+      font-size: 15px;
+      color: #fff;
+    }
+
 
     .btn {
       position: absolute;
       padding: 5px 10px;
-      font-size: 20px;
-      border-radius: 5px;
     }
-
-    #btn-light {
-      background-color: #adb5bd;
-      border: 1px solid #000;
-    }
-
-    #btn-dark {
-      background-color: rgb(27, 45, 63);
-      border: 1px solid #fff;
-    }
-
-    .head,
-    .capLetters,
-    .my-info,
-    .detail,
-    .pointer,
-    .second-page-link {
-      color: rgb(202, 113, 53);
-    }
-
-
-
 
     .btn-contact {
       display: block;
       margin: 30px auto;
       padding: 10px 35px;
-      border-radius: 5px;
-      background-color: rgb(56, 188, 240);
-      color: #fff;
-      font-size: 15px;
-      font-weight: bold;
-      border: 1px solid rgb(27, 45, 63);
-      transition: all 200ms ease-in-out;
-      box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+      box-shadow: 5px 5px 10px rgba(151, 144, 144, 0.4);
     }
 
+    .btn:hover,
     .btn-contact:hover {
-      background-color: #fff;
-      color: rgb(56, 188, 240);
+      background-position: right center;
+      color: #fff;
       cursor: pointer;
     }
 
-
-
-    .head {
+    .love {
       font-family: 'Londrina Shadow', cursive;
       font-size: 60px;
       margin-right: 10px;
     }
 
-    .head:hover,
-    .my-info:hover {
+    .love:hover,
+    .my-name:hover {
       color: #fff;
       cursor: pointer;
     }
 
-
     .about-me {
-      font-size: 13px;
+      font-size: 14px;
       text-align: center;
       line-height: 1.5;
-      font-family: sans-serif;
+      font-family: serif;
       color: rgb(198, 224, 235);
       margin: 20px auto 0;
       padding: 20px 5%;
@@ -116,11 +163,7 @@
       background-color: rgb(0, 0, 0, 0.5);
     }
 
-    .capLetters {
-      font-weight: bold;
-    }
-
-    .my-info {
+    .my-name {
       display: block;
       font-size: 35px;
       font-weight: bold;
@@ -132,10 +175,39 @@
       font-weight: bold;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 30px;
+    .pointer {
+      font-size: 25px;
+    }
+
+    .first-page-link {
+      text-decoration: none;
+      color: rgb(230, 233, 235);
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      transition: all 400ms ease-in-out;
+    }
+
+    .first-page-link:hover {
+      text-decoration: underline;
+      color: rgb(27, 45, 63);
+      background: rgb(125, 199, 221);
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 10px 25px;
+      margin: 10px 15px;
+    }
+
+    .second-page-link {
+      text-decoration: none;
+      margin: 5px;
+      font-weight: bold;
+      color: rgba(19, 53, 93, 2);
+    }
+
+    .second-page-link:hover {
+      text-decoration: underline;
     }
 
     .main-pic {
@@ -150,78 +222,30 @@
       max-width: 65%;
       transform: rotate(360deg);
       transition: all 2s ease-in-out;
-      border: 2px solid rgb(202, 113, 53)
-    }
-
-    .first-page-link {
-      text-decoration: none;
-      color: #fff;
-      font-size: 12px;
-      display: block;
-      text-align: center;
-      margin-top: 10px;
-      transition: all 400ms ease-in-out;
-    }
-
-    .first-page-link:hover {
-      text-decoration: underline;
-      color: #fff;
-      background: rgb(45, 103, 121);
-      border-radius: 5px;
-      padding: 10px 25px;
-      margin: 10px 15px;
-    }
-
-    .pointer {
-      font-size: 25px;
-    }
-
-    .second-page-link {
-      text-decoration: none;
-      margin: 5px;
-      font-weight: bold;
-    }
-
-    .second-page-link:hover {
-      text-decoration: underline;
+      border: 2px solid #DE3C3C;
     }
 
     .pic1,
     .pic2,
     .pic3,
-    .pic4 {
+    .pic4,
+    .pic5 {
       width: 40%;
       display: block;
       margin: 30px auto 10px;
-      border: 2px solid rgb(202, 113, 53);
+      border: 2px solid #1B6CA8;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-      transition: all 500ms ease-in-out;
+      transition: all 1s ease-in-out;
     }
 
-    .pic3 {
-      margin-top: 0;
-    }
-
-    .pic1:hover,
-    .pic2:hover {
-      width: 75%;
-      display: block;
-      margin: 20px auto;
+    .pics:hover {
       border: 2px solid rgb(82, 163, 214);
       border-radius: 10px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-
-    }
-
-    .pic3:hover,
-    .pic4:hover {
-      width: 60%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
       display: block;
       margin: 20px auto;
-      border: 2px solid rgb(82, 163, 214);
-      border-radius: 10px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      width: 50%;
     }
 
     .footer p {
@@ -230,127 +254,224 @@
       font-family: sans-serif;
       font-size: 14px;
     }
+
+    .hr {
+      border: 2px dashed rgb(27, 45, 63);
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="love">
+
+    <q>
+      If there is no struggle, there is no progress.
+    </q>
+    <span class="quoter">
+      —Frederick Douglass
+    </span>
+
     <div class="btns">
-      <button class="btn" id="btn-light">🖤</button>
-      <button class="btn" id="btn-dark">🤍</button>
+      <button class="btn" id="btn-light">
+        🤗 🥰
+      </button>
+      <button class="btn" id="btn-dark">
+        Try mee! 🙈
+      </button>
     </div>
     <h1>
-      <span class="head">Love</span> Photography
+      <span class="love">
+        Love
+      </span>
+      Photography
     </h1>
     <h2>
       Making memories with my camera
     </h2>
-    <img src="https://i.postimg.cc/jdj43WVb/Me.jpg" alt="Me and my camera" class="main-pic" />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/032/original/157004957_2879413869001105_8621260939159245079_n.jpeg?1642389229"
+      alt="Me and my camera" class="main-pic" />
 
     <p class="about-me">
-      <span class="my-info">I am Arameh Soltani.</span>I’m a <span class="detail">Photographer</span> based in <span
-        class="detail">Montreal</span>.
+      <span class="my-name">
+        I am Arameh Soltani 📸
+      </span>
+      I’m a
+      <span class="detail">
+        <em>
+          Photographer
+        </em>
+      </span>
+      based in
+      <span class="detail">
+        <em>
+          Montreal
+        </em>
+      </span>.
       In love with capturing the
       beautiful
       moments of
       this
       lovely
-      city,sharing the things I care about and what excites me.
+      city,
+      <br>
+      sharing the things I care about and what excites me.
       <br>
       <br>
       Type of Photography that I’m interested :
       <br>
-      <span class="capLetters">L</span>andscape Photography,
-      <span class="capLetters">P</span>ortrait Photography,
+      <span class="capLetters">
+        <strong>
+          L
+        </strong>
+      </span>
+      andscape Photography,
+      <span class="capLetters">
+        <strong>
+          P
+        </strong>
+      </span>
+      ortrait Photography,
       <br>
-      <span class="capLetters">S</span>treet Photography,
-      <span class="capLetters">C</span>ityscape Photography
+      <span class="capLetters">
+        <strong>
+          S
+        </strong>
+      </span>
+      treet Photography,
+      <span class="capLetters">
+        <strong>
+          C
+        </strong>
+      </span>
+      ityscape Photography
       <br>
       <br>
-      Hobbies are of different kinds and it is one that you would be loving and enjoying to do the most. Of all the
+      Of all the
       hobbies
-      that we see and hear, I love Photography the best.
-      Photography is something that just does not happen overnight. One has to devote time and develop patience and
-      learn the
-      art of good photography.
-      It is something that develops over a period of time and with a good imagination sense and right kind of equipment,
-      it is
-      quite easy to capture those wonderful and cherished moments of life, which could never be bought back in reality.
-      Photography is an art and it just captures the beauty of the moment in all its best.
-      From photography, I realized that getting a different view of things means you have a more open mind to the world.
-      Which
-      is why it’s always been my favorite hobby.
+      that we see and hear, I love Photography the best. I love to grab my camera and a cup of coffee and go out …
+      Explore … Get some fresh air and of course couple of nice
+      shotz . This summer , I made so many great memories with my camera. I call it my buddy. Wherever we went, we went
+      together. I shared some of my pictures here in this page. Linked my instagram accounts ,too. In case you would
+      like to
+      see more of my work.
+      Currently, I decided to take a break during the winter time to rest and work on myself and the future. Thanks to
+      my
+      boyfriend, Now I learn Coding. In love with that already… 🥰
 
       <br>
       <a href="https://www.instagram.com/arameh_soltani/" target="_blank" class="first-page-link"> <span
-          class="pointer">☞</span> To see
-        my
-        photos in
-        my
-        Instagram ... <span class="pointer">☜</span>
+          class="pointer">
+          ☞
+        </span> To see
+        my photos in my Instagram ...
+        <span class="pointer">
+          ☜
+        </span>
       </a>
     </p>
-
-
+    <hr class="hr">
     <div class="album1">
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/017/original/IMG_2533.jpg?1642363166"
-        class="pic1" />
       <img src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/019/original/IMG_5526.jpg?1642363352"
-        class="pic2" />
-      <img src="" alt="">
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/021/original/IMG_9517-3.jpg?1642363611"
-        class="pic3" />
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/028/original/IMG_2533-min.jpg?1642388994"
+        class="pics pic1" />
+
       <img src="
-https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/018/original/IMG_2893.jpg?1642363253"
-        class="pic4" />
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/029/original/IMG_5526-min.jpg?1642389043"
+        class="pics pic2" />
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/093/original/B510EE50-18D7-4D23-8B14-D028CB514DB9-min.jpeg?1642463821"
+        class="pics pic3" />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/031/original/IMG_9517-3-min.jpg?1642389071"
+        class="pics pic4" />
+
+      <img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/030/original/IMG_2893-min.jpg?1642389051"
+        class="pics pic5" />
     </div>
-
-
     <div class="footer">
-      <button class="btn-contact">Contact Me 😊</button>
-      <p>This Page built by <a href="https://www.instagram.com/arameh_photography/" target="_blank"
-          class="second-page-link">Arameh Soltani</a>
+      <button class="btn-contact">
+        Contact Me 😊
+      </button>
+      <p>
+        This Page was built by
+        <a href="https://www.instagram.com/arameh_photography/" target="_blank" class="second-page-link">
+          Arameh Soltani
+        </a>
       </p>
+      <a href="#love" class="up">
+        ⬆
+      </a>
     </div>
   </div>
 
 
   <script>
 
-    // alert("Welcome To My Page 🤗")
+    // alert("Welcome To My Page 🤗");
 
-    function ChangeToDark() {
-      let backgroundColor = document.body.style.background = '#adb5bd';
-      document.getElementById('btn-light').style.visibility = 'visible';
-      document.getElementById('btn-dark').style.visibility = 'hidden';
-    }
-
-    let darkMode = document.getElementById("btn-dark");
-    darkMode.addEventListener('click', ChangeToDark)
 
 
     function ChangeToLight() {
-      document.body.style.background = '';
-      document.getElementById('btn-light').style.visibility = 'hidden';
-      document.getElementById('btn-dark').style.visibility = 'visible';
+      let backgroundColor = (document.body.style.background = "#8AB6D6");
+      document.querySelector('h1').style.color = '#1b2d3f';
+      document.querySelector('h2').style.color = '#1b2d3f';
+      document.querySelector('q').style.color = '#1b2d3f';
+      document.getElementById("btn-light").style.visibility = "visible";
+      document.getElementById("btn-dark").style.visibility = "hidden";
+    }
+
+    let darkMode = document.getElementById("btn-dark");
+    darkMode.addEventListener("click", ChangeToLight);
+
+    function ChangeToDark() {
+      document.body.style.background = "";
+      document.querySelector('h1').style.color = '';
+      document.querySelector('h2').style.color = '';
+      document.querySelector('q').style.color = '';
+      document.getElementById("btn-light").style.visibility = "hidden";
+      document.getElementById("btn-dark").style.visibility = "visible";
     }
 
     let lightMode = document.getElementById("btn-light");
-    lightMode.addEventListener('click', ChangeToLight);
+    lightMode.addEventListener("click", ChangeToDark);
 
+
+
+    function frenchLang() {
+      let firstName = prompt("Quel est votre prénom? ");
+      let lastName = prompt("Quel est votre nom de famille?");
+      let typeOfReq = prompt("Quelle est votre adresse e-mail? ");
+      let fullName = firstName + " " + lastName;
+
+      alert(`Merci pour vos informations ${fullName},je vous contacterai bientôt pour plus de détails
+`);
+    }
+
+    function otherLang() {
+      firstName = prompt("What's your first name? ");
+      lastName = prompt("What's your last name?");
+      typeOfReq = prompt("What's your email address? ");
+      fullName = firstName + " " + lastName;
+
+      alert(`Thanks for your information ${fullName}, I will contact you soon for more details`);
+    }
 
 
     function getInfo() {
-      let firstName = prompt("What's your first name? ");
-      let lastName = prompt("What's your last name?");
-      let typeOfReq = prompt("What's your email address? ");
-      let fullName = firstName + " " + lastName;
+      let language = prompt("What language do you speak? French ? English ? ... ")
+      language = language.toLowerCase();
 
-      alert(`Thanks for your information ${fullName}, I will contact you soon for more details`)
+      if (language === 'french') {
+        frenchLang();
+      } else {
+        otherLang();
+      }
     }
+
+
 
     let contactButton = document.querySelector('.btn-contact');
     contactButton.addEventListener('click', getInfo);
