@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Londrina+Shadow&family=Quantico:ital@1&family=Raleway:wght@300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Londrina+Shadow&family=Nunito:wght@200&family=Quantico:ital@1&family=Raleway:wght@200&display=swap"
     rel="stylesheet">
-  <title>Photography 📷</title>
+  <title>My Passion: Photography 📸</title>
   <style>
     body {
       background: linear-gradient(180deg, rgba(27, 45, 63, 1) 0%, rgba(59, 115, 161, 1) 60%, rgba(131, 186, 212, 1) 86%);
@@ -22,7 +22,6 @@
     }
 
     h2 {
-
       text-align: center;
       color: rgb(150, 207, 243);
       border: 2px dashed #DE3C3C;
@@ -67,7 +66,8 @@
     .love,
     .capLetters,
     .my-name,
-    .detail {
+    .detail,
+    .up:hover {
       color: #da4747;
     }
 
@@ -79,19 +79,14 @@
       font-size: 30px;
       text-decoration: none;
       color: #fff;
-      background-color: rgb(40, 80, 107);
       border-radius: 5px;
       padding: 5px;
-      border: 1px solid rgb(80, 115, 150);
-      opacity: 0.4;
+      border: 2px solid rgb(18, 60, 80);
+      opacity: 0.6;
     }
-
-
 
     .up:hover {
       opacity: 1;
-      color: #da4747;
-      background-color: rgb(80, 115, 150);
       border: 1px solid #aa7777;
       cursor: pointer;
     }
@@ -113,7 +108,6 @@
       font-size: 15px;
       color: #fff;
     }
-
 
     .btn {
       position: absolute;
@@ -143,14 +137,13 @@
     .love:hover,
     .my-name:hover {
       color: #fff;
-      cursor: pointer;
     }
 
     .about-me {
       font-size: 14px;
       text-align: center;
       line-height: 1.5;
-      font-family: serif;
+      font-family: 'Nunito', sans-serif;
       color: rgb(198, 224, 235);
       margin: 20px auto 0;
       padding: 20px 5%;
@@ -172,7 +165,11 @@
     }
 
     .detail {
-      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .capLetters {
+      font-size: 20px;
     }
 
     .pointer {
@@ -182,7 +179,7 @@
     .first-page-link {
       text-decoration: none;
       color: rgb(230, 233, 235);
-      font-size: 20px;
+      font-size: 18px;
       display: block;
       text-align: center;
       margin-top: 10px;
@@ -364,7 +361,7 @@
           class="pointer">
           ☞
         </span> To see
-        my photos in my Instagram ...
+        my photos in my <span class="my-ig">Instagram</span> ...
         <span class="pointer">
           ☜
         </span>
@@ -397,7 +394,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/030/origina
       </button>
       <p>
         This Page was built by
-        <a href="https://www.instagram.com/arameh_photography/" target="_blank" class="second-page-link">
+        <a href="https://www.linkedin.com/in/arameh-soltani-4a6060171/" target="_blank" class="second-page-link">
           Arameh Soltani
         </a>
       </p>
@@ -411,8 +408,6 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/030/origina
   <script>
 
     // alert("Welcome To My Page 🤗");
-
-
 
     function ChangeToLight() {
       let backgroundColor = (document.body.style.background = "#8AB6D6");
@@ -446,7 +441,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/030/origina
       let typeOfReq = prompt("Quelle est votre adresse e-mail? ");
       let fullName = firstName + " " + lastName;
 
-      alert(`Merci pour vos informations ${fullName},je vous contacterai bientôt pour plus de détails
+      alert(`Merci pour vos informations ${fullName}, Je vous contacterai bientôt pour plus de détails.
 `);
     }
 
@@ -456,13 +451,15 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/030/origina
       typeOfReq = prompt("What's your email address? ");
       fullName = firstName + " " + lastName;
 
+
       alert(`Thanks for your information ${fullName}, I will contact you soon for more details`);
     }
 
 
     function getInfo() {
-      let language = prompt("What language do you speak? French ? English ? ... ")
+      let language = prompt("What language do you speak? French ? English ? ... ");
       language = language.toLowerCase();
+      language.trim();
 
       if (language === 'french') {
         frenchLang();
@@ -470,7 +467,6 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/030/origina
         otherLang();
       }
     }
-
 
 
     let contactButton = document.querySelector('.btn-contact');
