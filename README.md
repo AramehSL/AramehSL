@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @AramehSL
-- 👀 I’m interested in Web Development, Photography, ...
-- 🌱 I’m currently learning HTML,CSS,JavaScript, ... 🤓
-- 💞️ Currently Student => SheCodes 👩🏼‍💻
+- 👀 I’m interested in Coding, Photography, ...
+- 🌱 I’m currently learning HTML,CSS,JavaScript,Bootstrap ,Api... 🤓
+- 💞️ Currently Student => SheCodes Plus 👩🏼‍💻
 - 📫 How to reach me : Aramehsl@gmail.com or via LinkedIn (https://www.linkedin.com/in/arameh-soltani-4a6060171/)
 
 <!---
