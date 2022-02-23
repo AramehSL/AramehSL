@@ -6,7 +6,7 @@
 
 
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
 
 <!---
 AramehSL/AramehSL is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
