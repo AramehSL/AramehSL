@@ -6,10 +6,10 @@
 
 
 
-
- <div id="badges">
- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
 <div id="header" align="center">
+ <div id="badges">
+ 
   <a href="https://www.linkedin.com/in/arameh-soltani/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
