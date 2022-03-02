@@ -6,8 +6,9 @@
 
 
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
 <div id="header" align="center">
+ [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
+
  <div id="badges">
  
   <a href="https://www.linkedin.com/in/arameh-soltani/">
