@@ -19,7 +19,8 @@
 </div>
  <img src="https://komarev.com/ghpvc/?username=AramehSL&style=flat-square&color=blue" alt=""/>
 </div>
- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=AramehSL
+&theme=dark&background=000000)](https://git.io/streak-stats)
 
 
 <!---
