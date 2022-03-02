@@ -7,7 +7,6 @@
 
 
 <div id="header" align="center">
- [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
 
  <div id="badges">
  
@@ -20,6 +19,7 @@
 </div>
  <img src="https://komarev.com/ghpvc/?username=AramehSL&style=flat-square&color=blue" alt=""/>
 </div>
+ [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AramehSL)](https://git.io/streak-stats)
 
 
 <!---
