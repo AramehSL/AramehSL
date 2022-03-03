@@ -12,7 +12,7 @@
 - 👋 Hi, I’m Arameh Soltani | Aspiring Front-End Developer |
 - 👀 I’m interested in Coding, Photography, ...
 - 🌱 I’m currently learning HTML,CSS,JavaScript,Bootstrap ,Api... 🤓
-- 💞️ Student => SheCodes Plus 
+- 💞️ Student => SheCodes Responsive 
 
 - :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-AramehSoltani-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/arameh-soltani)
 
